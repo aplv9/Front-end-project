@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        
+    </head>
 
+    <body>
+        <header>
+            <h1>Blueberry Store</h1> 
+            <nav>
+                <ul>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#redes">Redes</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+ <section id="productos">
+                <h2>Productos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Sunset lamp</td>
+                            <td>$15</td>
+                            <td><button>Agregar</button></td>
+                        </tr>
+
+                        <tr>                       
+                            <td>002</td>
+                            <td>Vestido Midnigth</td>
+                            <td>$18</td>
+                            <td><button>Agregar</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>003</td>
+                            <td>Conjunto Brown</td>
+                            <td>$16</td>
+                            <td><button>Agregar</button></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+
+
+            <section id="contacto">
+                <h2>Formulario de Contacto</h2>
+                <form method="post" action="/">
+                    <fieldset>
+
+                        <legend>Información personal</legend>
+                        <div>
+                        <label>Nombre:</label>
+                        <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        placeholder="Maria Belen" required>
+                        </div>
+
+                        <div>
+                        <label>Apellido:</label>
+                        <input 
+                        type="text" 
+                        id="apellido" 
+                        name="apellido" 
+                        placeholder="Vargas Rodriguez" required> 
+                        </div>
+
+                        <div>
+                        <label>Teléfono:</label>
+                        <input 
+                        type="tel" 
+                        id="teléfono" 
+                        name="teléfono" 
+                        placeholder="+58 416 787-3845" required> 
+                        </div>
+
+                        <div>
+                        <label>Consulta:</label>
+                        <textarea id="consulta" 
+                        name="consulta" 
+                        placeholder="ingrese su consulta..."></textarea>
+                        </div>
+                        
+                    </fieldset>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+        </main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer >
+            Copyright © 2024 - Blueberry Store
+            <br>
+            <a href="mailto:analopezza09@gmail.com">Enviame un correo</a>
+
+        </footer>
+    </body>
+</html>

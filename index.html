@@ -68,7 +68,7 @@
                         name="nombre" 
                         placeholder="Maria Belen" required>
                         </div>
-
+                        <br>
                         <div>
                         <label>Apellido:</label>
                         <input 
@@ -77,7 +77,7 @@
                         name="apellido" 
                         placeholder="Vargas Rodriguez" required> 
                         </div>
-
+                        <br>
                         <div>
                         <label>Teléfono:</label>
                         <input 
@@ -86,15 +86,39 @@
                         name="teléfono" 
                         placeholder="+58 416 787-3845" required> 
                         </div>
-
-                        <div>
-                        <label>Consulta:</label>
-                        <textarea id="consulta" 
-                        name="consulta" 
-                        placeholder="ingrese su consulta..."></textarea>
-                        </div>
                         
                     </fieldset>
+                    <br>
+                    <fieldset> 
+
+                    <legend>Consulta</legend>
+
+                    <div>
+
+                    <Label>¿Cual es el motivo de tu consulta?
+                    <br>
+                    <input list="languages"></Label>               
+                    <datalist id="languages">
+                    <option value="Disponibilidad"></option>
+                    <option value="Entrega"></option>
+                    <option value="Método de pago"></option>
+                    <option value="Otros"></option</datalist>
+                    </div>
+                    <div>
+                    
+                    <label>Mensaje:</label>
+                    <br>
+                    <textarea id="consulta" 
+                    name="consulta" 
+                    placeholder="Ingrese su consulta..."></textarea>
+                    </div>
+                    <div>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <Label for="terms">¿Aceptas los términos? </Label>
+                    </div>   
+                 
+                    </fieldset>
+                    <br>
                     <button type="submit">Enviar</button>
                 </form>
             </section>
@@ -108,7 +132,7 @@
             Copyright © 2024 - Blueberry Store
             <br>
             <a href="mailto:analopezza09@gmail.com">Enviame un correo</a>
-
+            <a href="instagram.com/blueberrystore_ve">Instagram</a>
         </footer>
     </body>
 </html>

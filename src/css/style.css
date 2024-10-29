@@ -14,7 +14,14 @@
    /**/
    header{
        color:rgb(53, 6, 97);
-       text-align: center;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+   }
+
+   nav {
+    margin-right: 35px;
    }
    
    
@@ -29,7 +36,7 @@
    
    nav ul li a{
        text-decoration: none;
-       color: rgb(103, 48, 204);
+       color: rgb(136, 112, 175);
    }
 
    #productos {

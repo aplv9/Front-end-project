@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="src/css/style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -24,44 +26,106 @@
         <main>
  <section id="productos"> 
                 <h2>Productos</h2> 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Producto</th>
-                            <th>Precio</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>001</td>
-                            <td>Sunset lamp</td>
-                            <td>$15</td>
-                            <td><button>Agregar</button></td>
-                        </tr>
-
-                        <tr>                       
-                            <td>002</td>
-                            <td>Vestido Midnigth</td>
-                            <td>$18</td>
-                            <td><button>Agregar</button></td>
-                        </tr>
-
-                        <tr>
-                            <td>003</td>
-                            <td>Conjunto Brown</td>
-                            <td>$16</td>
-                            <td><button>Agregar</button></td>
-                        </tr>
-
-                    </tbody>
-                </table>
+                <div class="container mt-3">
+                    <div class="row" style="justify-content: space-evenly">
+                    <div class="card" style="width: 200px;">
+                      <img src="./src/img/bbytees.jpg" class="card-img-top" alt="Imagen del producto">
+                      <div class="card-body">
+                        <h5 class="card-title">Baby tee</h5>
+                        <p class="card-text">Talla XS</p>
+                        <p class="card-text"><strong>Precio:</strong> $12,00</p>
+                        <a href="#" class="btn btn-primary">Añadir</a>
+                      </div>
+                    </div>
+                    <div class="card" style="width: 200px;">
+                        <img src="./src/img/butterflies.jpg" class="card-img-top" alt="Imagen del producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Aretes butterflies</h5>
+                          <p class="card-text">Aretes con forma de mariposa</p>
+                          <p class="card-text"><strong>Precio:</strong> $6,00</p>
+                          <a href="#" class="btn btn-primary">Añadir</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 200px;">
+                        <img src="./src/img/brown.jpg" class="card-img-top" alt="Imagen del producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Conjunto Brown</h5>
+                          <p class="card-text">Talla S</p>
+                          <p class="card-text"><strong>Precio:</strong> $16,00</p>
+                          <a href="#" class="btn btn-primary">Añadir</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 200px;">
+                        <img src="./src/img/chocolate.jpg" class="card-img-top" alt="Imagen del producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Vestido chocolate</h5>
+                          <p class="card-text">Talla S</p>
+                          <p class="card-text"><strong>Precio:</strong> $18,00</p>
+                          <a href="#" class="btn btn-primary">Añadir</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 200px;">
+                        <img src="./src/img/midnight.jpg" class="card-img-top" alt="Imagen del producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Vestido midnight</h5>
+                          <p class="card-text">Talla S</p>
+                          <p class="card-text"><strong>Precio:</strong> $18,00</p>
+                          <a href="#" class="btn btn-primary">Añadir</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 200px;">
+                        <img src="./src/img/setlove.jpg" class="card-img-top" alt="Imagen del producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Set love</h5>
+                          <p class="card-text">Collar para compartir con tu pareja</p>
+                          <p class="card-text"><strong>Precio:</strong> $8,00</p>
+                          <a href="#" class="btn btn-primary">Añadir</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 200px;">
+                        <img src="./src/img/sunset.jpg" class="card-img-top" alt="Imagen del producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Sunset lamp</h5>
+                          <p class="card-text">Lámpara para recrear atardeceres</p>
+                          <p class="card-text"><strong>Precio:</strong> $15,00</p>
+                          <a href="#" class="btn btn-primary">Añadir</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 200px;">
+                        <img src="./src/img/lentes.jpg" class="card-img-top" alt="Imagen del producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Lentes</h5>
+                          <p class="card-text">Lentes de sol</p>
+                          <p class="card-text"><strong>Precio:</strong> $10,00</p>
+                          <a href="#" class="btn btn-primary">Añadir</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 200px;">
+                        <img src="./src/img/gorritos.jpg" class="card-img-top" alt="Imagen del producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Gorros</h5>
+                          <p class="card-text">Para compartir con tu pareja</p>
+                          <p class="card-text"><strong>Precio:</strong> $8,00</p>
+                          <a href="#" class="btn btn-primary">Añadir</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 200px;">
+                        <img src="./src/img/medias.jpg" class="card-img-top" alt="Imagen del producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Medias de red</h5>
+                          <p class="card-text">Talla unica</p>
+                          <p class="card-text"><strong>Precio:</strong> $6,00</p>
+                          <a href="#" class="btn btn-primary">Añadir</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
             </section>
 
 
             <section id="contacto">
                 <h2>Formulario de Contacto</h2>
-                <form method="post" action="/">
+                <form method="post" action="https://formspree.io/f/xdkoarnv">
                     <fieldset>
 
                         <legend>Información personal</legend>
@@ -139,5 +203,8 @@
             <a href="mailto:analopezza09@gmail.com">Enviame un correo</a>
             <a href="instagram.com/blueberrystore_ve">Siguenos en Instagram</a>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>

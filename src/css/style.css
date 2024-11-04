@@ -60,7 +60,33 @@
    th, td {   
        text-align: left;
    }
+
+   form {
+    padding: 10px;
+   }
    
+   #botoncito {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  #botoncito:hover {background-color: #3e8e41}
+  
+  #botoncito:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
    
    footer {
        text-align: center; 
@@ -69,3 +95,22 @@
        width: 100%;
    }
 
+   .title{
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+   }
+
+   footer {
+    background-color: #f8f9fa;
+}
+footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}

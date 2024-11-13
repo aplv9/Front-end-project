@@ -99,7 +99,7 @@ footer a:hover {
     --tooltip-height: 35px;
     --tooltip-width: 90px;
     --gap-between-tooltip-to-button: 18px;
-    --button-color: #435784;
+    --button-color: #472d69;
     --tooltip-color: #fff;
     width: var(--width);
     height: var(--height);
@@ -116,7 +116,7 @@ footer a:hover {
     content: attr(data-tooltip);
     width: var(--tooltip-width);
     height: var(--tooltip-height);
-    background-color: #b595d1ea;
+    background-color: #b595d1dc;
     font-size: 0.9rem;
     color: #fff;
     border-radius: .25em;
@@ -131,7 +131,7 @@ footer a:hover {
     width: 0;
     height: 0;
     border: 10px solid transparent;
-    border-top-color: #555555;
+    border-top-color: #ada3e634;
     left: calc(50% - 10px);
     bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
   }
@@ -283,7 +283,6 @@ h2 {
 }
 
 formulario
-    /* Estilos generales */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -292,14 +291,14 @@ formulario
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      overflow: hidden; /* Evita el desplazamiento de la página cuando se abre el modal */
+      height: 100vh;a
+      overflow: hidden;
     }
 
     /* Botón para abrir el modal */
     .open-modal-btn {
       padding: 12px 24px;
-      background-color: #28a745;
+      background-color: #435784;
       color: white;
       border: none;
       border-radius: 5px;
@@ -309,20 +308,20 @@ formulario
     }
 
     .open-modal-btn:hover {
-      background-color: #218838;
+      background-color: #b595d1;
     }
 
     /* Estilos del modal */
     .modal {
-      display: none; /* El modal está oculto por defecto */
+      display: none; 
       position: fixed;
-      z-index: 1000; /* Asegura que el modal esté por encima del contenido */
+      z-index: 1000; 
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
-      overflow: hidden; /* Evita el desplazamiento de la página */
+      background-color: rgba(0, 0, 0, 0.5); 
+      overflow: hidden; 
       display: flex;
       justify-content: center;
       align-items: center;
@@ -333,9 +332,9 @@ formulario
       padding: 20px;
       border-radius: 8px;
       width: 100%;
-      max-width: 500px; /* Modal se adapta a pantallas pequeñas */
+      max-width: 500px; 
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      overflow: hidden; /* Evita que los elementos sobresalgan */
+      overflow: hidden; 
     }
 
     .modal-header {
@@ -355,14 +354,13 @@ formulario
       color: #000;
     }
 
-    /* Estilo para centrar el título */
+   
     .modal-header h2 {
       text-align: center;
       margin: 0;
       flex-grow: 1;
     }
 
-    /* Estilos del formulario dentro del modal */
     h2 {
       text-align: center;
       color: #333;
@@ -398,7 +396,7 @@ formulario
 
     button {
       padding: 12px;
-      background-color: #28a745;
+      background-color: #435784;
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -408,7 +406,7 @@ formulario
     }
 
     button:hover {
-      background-color: #218838;
+      background-color: #b595d1;
     }
 
     /* Diseño de checkbox para mejorar la apariencia */
@@ -426,14 +424,14 @@ formulario
       height: 20px;
       border-radius: 5px;
       background-color: #fff;
-      border: 2px solid #28a745;
+      border: 2px solid #6c59ad;
       cursor: pointer;
       transition: background-color 0.3s, border-color 0.3s;
     }
 
     .checkbox-container input:checked {
-      background-color: #28a745;
-      border-color: #218838;
+      background-color: #7428a7;
+      border-color: #6b4d9b;
     }
 
     .checkbox-container label {
@@ -442,7 +440,7 @@ formulario
     }
 
     .checkbox-container a {
-      color: #28a745;
+      color: #6b4eaf;
       text-decoration: none;
       font-weight: bold;
     }
@@ -489,4 +487,3 @@ formulario
         font-size: 14px;
       }
     }
-

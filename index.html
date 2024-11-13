@@ -26,12 +26,11 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/jpn" href="/src/img/logo.png">
-    <script src="src/js/script.js"> </script>
 
   </head>
 
   <body>
-    <header>
+    <header id="inicio">
       <h1 class="title">Blueberry Store</h1>
       <nav>
         <ul>
@@ -42,73 +41,40 @@
       </nav>
     </header>
 
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="0"
-          class="active"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="2"
-        ></button>
-      </div>
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="./src/img/SHOP.png"
-            alt="Los Angeles"
-            class="d-block"
-            style="width: 100%"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="./src/img/navidad.png"
-            alt="Chicago"
-            class="d-block"
-            style="width: 100%"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="./src/img/SUMMER.png"
-            alt="New York"
-            class="d-block"
-            style="width: 100%"
-          />
-        </div>
-      </div>
-
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-      </button>
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/src/img/SHOP.png" alt="Los Angeles" class="d-block" style="width:100%">
     </div>
-
-    <div class="container-fluid mt-3">
+    <div class="carousel-item">
+      <img src="/src/img/SUMMER.png" alt="Chicago" class="d-block" style="width:100%">
     </div>
+    <div class="carousel-item">
+      <img src="/src/img/navidad.png" alt="New York" class="d-block" style="width:100%">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container-fluid mt-3">
+</div>
 
     <main>
       <section id="productos">
@@ -514,7 +480,7 @@
             </div>
         </div>
     </div>
-    
+    <section id="contacto">
   <!-- Botón para abrir el modal -->
   <button class="open-modal-btn" id="openModalBtn">Abrir Formulario de Contacto</button>
 
@@ -560,12 +526,13 @@
           <input type="checkbox" id="terms" name="terms" required>
           <label for="terms">Acepto los <a href="/terminos" target="_blank">términos y condiciones</a></label>
         </div>
-
+        <br>
         <!-- Botón de Enviar -->
         <button type="submit">Enviar</button>
       </form>
     </div>
   </div>
+  </section>
   <script>
         // Obtener elementos del DOM
         const modal = document.getElementById("contactModal");
@@ -595,10 +562,18 @@
     <br />
     <br />
     <footer id="redes">
-      Copyright © 2024 - Blueberry Store
+      Copyright © 2024 - Talento Tech - js - C24225
       <br>
-      <a href="mailto:analopezza09@gmail.com">Enviame un correo</a>
+      <a href="mailto:blueberrystore.ar@gmail.com">Enviame un correo</a>
       <a href="instagram.com/blueberrystore_ve">Siguenos en Instagram</a>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#redes">Redes</a></li>
+        </ul>
+      </nav>
   </footer>
   </body>
 </html>

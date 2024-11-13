@@ -487,3 +487,6 @@ formulario
         font-size: 14px;
       }
     }
+.card {
+  margin-bottom: 5px;
+}

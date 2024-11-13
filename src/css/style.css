@@ -65,28 +65,6 @@
     padding: 10px;
    }
    
-   #botoncito {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #04AA6D;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  
-  #botoncito:hover {background-color: #3e8e41}
-  
-  #botoncito:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
    
    footer {
        text-align: center; 
@@ -121,7 +99,7 @@ footer a:hover {
     --tooltip-height: 35px;
     --tooltip-width: 90px;
     --gap-between-tooltip-to-button: 18px;
-    --button-color: #222;
+    --button-color: #435784;
     --tooltip-color: #fff;
     width: var(--width);
     height: var(--height);
@@ -138,7 +116,7 @@ footer a:hover {
     content: attr(data-tooltip);
     width: var(--tooltip-width);
     height: var(--tooltip-height);
-    background-color: #555;
+    background-color: #b595d1ea;
     font-size: 0.9rem;
     color: #fff;
     border-radius: .25em;
@@ -153,7 +131,7 @@ footer a:hover {
     width: 0;
     height: 0;
     border: 10px solid transparent;
-    border-top-color: #555;
+    border-top-color: #555555;
     left: calc(50% - 10px);
     bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
   }
@@ -201,7 +179,7 @@ footer a:hover {
   }
   
   .button:hover {
-    background: #222;
+    background: #472d69;
   }
   
   .button:hover .text {
@@ -225,4 +203,290 @@ footer a:hover {
     bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
   }
   
-  
+ prueba
+ .container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  color: #ffc107;
+  font-size: 1.2em;
+}
+
+.comment {
+  margin-top: 10px;
+}
+
+.comment img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  .user-info {
+      flex-direction: column;
+  }
+
+  .user-info img {
+      margin-bottom: 10px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+formulario
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden; /* Evita el desplazamiento de la página cuando se abre el modal */
+    }
+
+    /* Botón para abrir el modal */
+    .open-modal-btn {
+      padding: 12px 24px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .open-modal-btn:hover {
+      background-color: #218838;
+    }
+
+    /* Estilos del modal */
+    .modal {
+      display: none; /* El modal está oculto por defecto */
+      position: fixed;
+      z-index: 1000; /* Asegura que el modal esté por encima del contenido */
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+      overflow: hidden; /* Evita el desplazamiento de la página */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 500px; /* Modal se adapta a pantallas pequeñas */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden; /* Evita que los elementos sobresalgan */
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .close-btn {
+      font-size: 30px;
+      color: #aaa;
+      cursor: pointer;
+    }
+
+    .close-btn:hover {
+      color: #000;
+    }
+
+    /* Estilo para centrar el título */
+    .modal-header h2 {
+      text-align: center;
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    /* Estilos del formulario dentro del modal */
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    /* Diseño de checkbox para mejorar la apariencia */
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .checkbox-container input {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      background-color: #fff;
+      border: 2px solid #28a745;
+      cursor: pointer;
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .checkbox-container input:checked {
+      background-color: #28a745;
+      border-color: #218838;
+    }
+
+    .checkbox-container label {
+      margin-left: 5px;
+      font-size: 16px;
+    }
+
+    .checkbox-container a {
+      color: #28a745;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Diseño adaptable (Responsive) */
+    @media (max-width: 768px) {
+      .modal-content {
+        width: 90%; /* El modal ocupa el 90% del ancho de la pantalla */
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      input, select, textarea {
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+      }
+
+      button {
+        font-size: 16px;
+      }
+
+      .modal-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .close-btn {
+        font-size: 25px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .modal-content {
+        width: 95%; /* El modal ocupa el 95% en pantallas más pequeñas */
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      button {
+        font-size: 14px;
+      }
+    }
+

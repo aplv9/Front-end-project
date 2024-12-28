@@ -8,41 +8,6 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-/**/
-header {
-  color: rgb(53, 6, 97);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-nav {
-  margin-right: 35px;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: rgb(136, 112, 175);
-}
-
-#productos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 50px;
-}
-
 table {
   width: 50%;
   border-collapse: collapse;
@@ -103,6 +68,7 @@ footer a:hover {
   background: var(--button-color);
   position: relative;
   text-align: center;
+  align-items: center;
   border-radius: 0.45em;
   font-family: "Arial";
   transition: background 0.3s;
@@ -481,4 +447,69 @@ button:hover {
 }
 .card {
   margin-bottom: 10px;
+}
+
+/* prueba navbar */
+
+/* Resetting some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3f368b;
+}
+
+header {
+  background-color: #ffffff;
+  color: #483d8b;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links a {
+  color: #483d8b;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar .nav-links a:hover {
+  color: #6156a4;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.cart img {
+  width: 30px;
+  height: 30px;
+}
+
+.cart-count {
+  background-color: #6156a4;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin-left: 5px;
+  font-size: 14px;
 }

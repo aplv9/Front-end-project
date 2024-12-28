@@ -89,10 +89,4 @@ export const products = [
       description : "Talla unica",
       price : "$10,00"
     },
-    {
-        title : "Otra cosa",
-        image : "./src/img/tops.jpg",
-        description : "Talla unica",
-        price : "$1000,00"
-    }
   ]

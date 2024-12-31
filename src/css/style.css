@@ -350,7 +350,7 @@ textarea {
   min-height: 120px;
 }
 
-button {
+.button-cards {
   padding: 12px;
   background-color: #435784;
   color: #fff;
@@ -361,8 +361,16 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button-cards:hover {
   background-color: #b595d1;
+}
+
+.cart-link{
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 20px;
 }
 
 /* Diseño de checkbox para mejorar la apariencia */
@@ -512,4 +520,13 @@ header {
   padding: 5px 10px;
   margin-left: 5px;
   font-size: 14px;
+}
+
+.cart-link {
+  cursor: pointer;
+}
+
+.cart-link:hover,
+.cart-link:active {
+  color: blue;
 }

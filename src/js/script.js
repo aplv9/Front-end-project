@@ -24,7 +24,7 @@ window.onload = () => {
 
   // Función para obtener el clima
   async function obtenerClima() {
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&lang=es`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&lang=es`;
     try {
       const response = await fetch(url);
       if (response == null){

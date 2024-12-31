@@ -1,4 +1,10 @@
+
 import { products } from "./products.js";
+
+// Inserta tu clave de API aquí
+const apiKey = 'ec3e419fe49c4abfa8b13700243112';
+const city = 'Buenos Aires';  // Cambia esto a la ciudad que deseas mostrar
+
 
 window.onload = () => {
   // Obtener elementos del DOM
@@ -12,7 +18,34 @@ window.onload = () => {
 
   // Configurar eventos en botones de tarjetas
   setupProductCardEvents(elements.cardContainerRow);
+
+  obtenerClima();
 };
+
+  // Función para obtener el clima
+  async function obtenerClima() {
+    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&lang=es`;
+    try {
+      const response = await fetch(url);
+      if (response == null){
+        alert('api no responde')
+      }
+
+      const data = await response.json();
+      // Accede a los datos y muestra el clima
+      let temperatura = data.current.heatindex_c;
+      let icono = data.current.condition.icon;
+      let humedad = data.current.humidity;
+      
+      console.log(temperatura,icono,humedad);
+      document.getElementById('clima').innerHTML = `
+        <p><strong>${city}</strong>: ${temperatura}°C </p>
+      `;
+    } catch (error) {
+      console.error('Error al obtener el clima:', error);
+      document.getElementById('clima').innerHTML = `<p>No se pudo obtener el clima.</p>`;
+    }
+  }
 
 // Obtener elementos del DOM
 function getDOMElements() {

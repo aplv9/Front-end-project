@@ -39,14 +39,23 @@
           <li><a href="#contacto">Contacto</a></li>
           <li><a href="#redes">Redes</a></li>
         </ul>
-
-        <div class="cart">
-          <button class="cart-link" data-bs-toggle="modal" data-bs-target="#carritoModal">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <img src="/src/img/shoppingcart.png" alt="Cart">
-          </button>
+    
+        <!-- Contenedor para el carrito y el clima -->
+        <div class="navbar-extra">
+          <!-- Carrito -->
+          <div class="cart">
+            <button class="cart-link" data-bs-toggle="modal" data-bs-target="#carritoModal">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <img src="/src/img/shoppingcart.png" alt="Cart">
+            </button>
+          </div>
+    
+          <!-- Clima -->
+          <div id="clima" class="clima">  
+          </div>
         </div>
-        
+    
+        <!-- Modal del carrito -->
         <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="carritoModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -65,7 +74,7 @@
                     </tr>
                   </thead>
                   <tbody id="carritoTabla">
-                    </tbody>
+                  </tbody>
                 </table>
               </div>
               <div class="modal-footer">
@@ -74,7 +83,7 @@
             </div>
           </div>
         </div>
-        </nav>
+      </nav>
     </header>
 
     <!-- Carousel -->

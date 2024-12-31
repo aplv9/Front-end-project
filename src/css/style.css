@@ -55,57 +55,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.button {
-  --width: 100px;
-  --height: 35px;
-  --tooltip-height: 35px;
-  --tooltip-width: 90px;
-  --gap-between-tooltip-to-button: 18px;
-  --button-color: #472d69;
-  --tooltip-color: #fff;
-  width: var(--width);
-  height: var(--height);
-  background: var(--button-color);
-  position: relative;
-  text-align: center;
-  align-items: center;
-  border-radius: 0.45em;
-  font-family: "Arial";
-  transition: background 0.3s;
-}
-
-.button::before {
-  position: absolute;
-  content: attr(data-tooltip);
-  width: var(--tooltip-width);
-  height: var(--tooltip-height);
-  background-color: #b595d1dc;
-  font-size: 0.9rem;
-  color: #fff;
-  border-radius: 0.25em;
-  line-height: var(--tooltip-height);
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
-  left: calc(50% - var(--tooltip-width) / 2);
-}
-
-.button::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-top-color: #ada3e634;
-  left: calc(50% - 10px);
-  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
-}
-
-.button::after,
-.button::before {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
-}
-
 .text {
   display: flex;
   align-items: center;
@@ -129,7 +78,7 @@ footer a:hover {
 
 .text,
 .icon {
-  transition: top 0.5s;
+  transition: top 0.3s ease-in-out;
 }
 
 .icon {
@@ -143,32 +92,6 @@ footer a:hover {
 .icon svg {
   width: 24px;
   height: 24px;
-}
-
-.button:hover {
-  background: #472d69;
-}
-
-.button:hover .text {
-  top: -100%;
-}
-
-.button:hover .icon {
-  top: 0;
-}
-
-.button:hover:before,
-.button:hover:after {
-  opacity: 1;
-  visibility: visible;
-}
-
-.button:hover:after {
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
-}
-
-.button:hover:before {
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
 }
 
 /* prueba*/
@@ -350,21 +273,6 @@ textarea {
   min-height: 120px;
 }
 
-.button-cards {
-  padding: 12px;
-  background-color: #435784;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
-  transition: background-color 0.3s ease;
-}
-
-.button-cards:hover {
-  background-color: #b595d1;
-}
-
 .cart-link{
   background: none;
   border: none;
@@ -529,4 +437,119 @@ header {
 .cart-link:hover,
 .cart-link:active {
   color: blue;
+}
+
+/* Estilos del botón */
+.button-cards {
+  --width: 100px;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #472d69;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.button-cards::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: #b595d1;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: 0.25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+.button-cards::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #ada3e634;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+.button-cards .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.button-cards .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.button-cards:hover {
+  background: #3b2279;
+}
+
+.button-cards:hover .text {
+  opacity: 0;
+}
+
+.button-cards:hover .icon {
+  opacity: 1;
+}
+
+.button-cards:hover::before,
+.button-cards:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button-cards:hover::before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
+.button-cards:hover::after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+
+.navbar-extra {
+  display: flex;
+  align-items: center;
+}
+
+.clima {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.clima img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
 }
